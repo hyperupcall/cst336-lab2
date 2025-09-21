@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="module" src="/script.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Guessing Number Game</title>
+	</head>
+	<body>
+		<main>
+			<h1>Guess the Number!</h1>
+			<p>Guess a number between 1 and 99 in seven attempts!</p>
+			<section>
+				<div>
+					<span><b>Total Wins: </b></span><span id="total-wins">0</span>
+				</div>
+				<div>
+					<span><b>Total Loses: </b></span><span id="total-losses">0</span>
+				</div>
+				<div>
+					<span><b>Total Games: </b></span><span id="total-games">0</span>
+				</div>
+			</section>
+
+			<section>
+				<label>
+					<input
+						title="Player guess"
+						type="text"
+						id="player-guess"
+						size="10"
+					/>
+				</label>
+				<label>
+					<button type="button" id="guess-button">Guess</button>
+				</label>
+				<label>
+					<button type="button" id="reset-button">Reset</button>
+				</label>
+
+				<h2>Feedback</h2>
+				<div id="feedback"></div>
+			</section>
+		</main>
+	</body>
+</html>
